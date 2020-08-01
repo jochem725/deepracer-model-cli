@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "deepracer-model-cli"
+version = "0.1.0"
+description = "CLI for managing locally trained AWS DeepRacer models."
+authors = ["jochem725"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+typer = "^0.3.1"
+pyfiglet = "^0.8.post1"
+termcolor = "^1.1.0"
+shellingham = "^1.3.2"
+click-spinner = "^0.1.10"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+[tool.poetry.scripts]
+deepracer-model-cli = "deepracer_model_cli.cli:main"
